@@ -16,11 +16,13 @@ markdown_extensions = [
     "admonition",
     "pymdownx.details",
     "pymdownx.superfences",
+    {"pymdownx.tabbed" = {alternate_style = true}},
     "md_in_html",
     "pymdownx.blocks.caption",
+    "pymdownx.snippets",
+    "abbr",
     {"pymdownx.tasklist" = {custom_checkbox = true}},
 ]
-
 
 [project.theme]
 favicon = "logo/logo.svg"
@@ -41,6 +43,7 @@ features = [
     "search.highlight",
     "toc.follow",
     "toc.integrate",
+    "content.tooltips"
 ]
 
 [[project.theme.palette]]
