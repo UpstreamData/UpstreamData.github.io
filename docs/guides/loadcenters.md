@@ -1,6 +1,7 @@
 # Loadcenter Guide
 
 ## Receiving
+
 - Remove shipping protection from the outside of the building
 - Ensure there is nothing obstructing the exhaust dampers
 - Ensure the intakes can be opened
@@ -55,9 +56,28 @@ These shrouds should be folded out, and screwed in place with Tek screws prior t
 
     The images below illustrate this process.
 
-    <figure markdown="span" >
-        ![Deflector assembly](images/deflectors.png){ .fix-png }
-        <figcaption>Deflector Assembly Steps</figcaption>
-    </figure>
+    
+    ![Deflector assembly](images/deflectors.png){ .fix-png }
+    /// caption
+    Deflector Assembly Steps
+    ///
 
-## 
+## Installing Miners
+
+Your loadcenter may come with laser cut inserts, depending on what type of miners you are using:
+
+- [x] Bitmain ntminer X19 series
+- [ ] Bitmain Antminer X21 series
+- [x] MicroBT Whatsminer
+- [x] Canaan Avalonminer
+- [x] Other (Contact Us)
+
+Before installing miners, place the inserts into the shelves, with the metal flanges facing toward the outside of the building.
+
+![Miner inserts](images/inserts.svg){ .fix-png width="50%" }
+/// caption
+Miner Inserts</figcaption>
+///
+
+To install miners, slide them into the shelves below an ethernet cable, and push them right to the back.
+They should fit snugly into the inserts or press up against the shelf lip (in the case of the X21 series).
