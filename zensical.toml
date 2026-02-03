@@ -6,6 +6,21 @@ site_url = "https://upstreamdata.github.io/"
 copyright = """
 Copyright &copy; 2026 Upstream Data Inc
 """
+use_directory_urls = true
+nav = [
+    { "Loadcenters" = "guides/loadcenters.md" }
+]
+extra_css = ["stylesheets/images.css"]
+markdown_extensions = [
+    "attr_list",
+    "admonition",
+    "pymdownx.details",
+    "pymdownx.superfences",
+    "md_in_html",
+    "pymdownx.blocks.caption"
+]
+
+
 [project.theme]
 favicon = "logo/logo.svg"
 language = "en"
@@ -42,5 +57,4 @@ toggle.name = "Switch to light mode"
 [project.theme.font]
 text = "Inter"
 code = "Jetbrains Mono"
-
 
