@@ -1,0 +1,46 @@
+[project]
+site_name = "Upstream Data - Docs"
+site_description = "Documentation for Upstream Data hardware."
+site_author = "Upstream Data"
+site_url = "https://upstreamdata.github.io/"
+copyright = """
+Copyright &copy; 2026 Upstream Data Inc
+"""
+[project.theme]
+favicon = "logo/logo.svg"
+language = "en"
+
+features = [
+    "navigation.footer",
+    "navigation.indexes",
+    "navigation.instant",
+    "navigation.instant.prefetch",
+    "navigation.instant.progress",
+    "navigation.path",
+    "navigation.sections",
+    "navigation.tabs",
+    "navigation.tabs.sticky",
+    "navigation.top",
+    "navigation.tracking",
+    "search.highlight",
+    "toc.follow",
+    "toc.integrate",
+]
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.theme.font]
+text = "Inter"
+code = "Jetbrains Mono"
+
+
