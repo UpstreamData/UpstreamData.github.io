@@ -76,8 +76,51 @@ Before installing miners, place the inserts into the shelves, with the metal fla
 
 ![Miner inserts](images/inserts.svg){ .fix-png width="50%" }
 /// caption
-Miner Inserts</figcaption>
+Miner Inserts
 ///
 
-To install miners, slide them into the shelves below an ethernet cable, and push them right to the back.
-They should fit snugly into the inserts or press up against the shelf lip (in the case of the X21 series).
+
+!!! tip "Shelving Miners"
+    1. Place the miner on the shelf.
+    2. Slide the miner all the way to the back. The body of the miner should press against the insert, or the shelf lip (for X21 series miners).
+
+## LoadSync™ setup
+
+LoadSync™ should be powered via a UPS, which is included inside the loadcenter. There are also cables included with the UPS to connect it to LoadSync™.
+
+!!! tip "Connecting the UPS and LoadSync™"
+    1. Connect the supplied cords to the black "battery" sockets on the back of the UPS.
+    2. Place the UPS either on the floor, or on the provided shelf (if applicable).
+    3. Connect the other end of the cables to LoadSync™, one to the bottom of the panel, the other to the exposed cable end.
+
+## Internet
+
+The easiest way to connect internet to the loadcenters is with Starlink.
+
+Internet is routed in via a port on the top of the LoadSync™ panel.
+
+=== "Starlink"
+
+    !!! tip "Connecting Internet"
+        1. Use the provided adaptor cable to power the Starlink modem from the UPS.
+        2. Run the ethernet cable from the Starlink modem to the input port on top of LoadSync™.
+
+    !!! warning "Changing the Subnet"
+        It is recommended that you change which subnet your Starlink modem is configured to.
+    
+        The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
+        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
+
+=== "LTE Modem"
+
+    !!! tip "Connecting Internet"
+        1. Use the provided adaptor cable to power the LTE modem from the UPS.
+        2. Run the ethernet cable from the LTE modem to the input port on top of LoadSync™.
+
+=== "Other"
+    
+    !!! tip "Connecting Internet"
+        1. If needed, use the provided adaptor cable to power your router from the UPS.
+        2. Run the ethernet cable from the router to the input port on top of LoadSync™.
+
+*[UPS]: Uninterruptible Power Supply
