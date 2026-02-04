@@ -1,3 +1,3 @@
 # Guides
 
-[Loadcenter Guide](./loadcenters.md){ .md-button .md-button--primary }
+[Loadcenter Initial Setup](./initial_setup.md){ .md-button .md-button--primary }

@@ -1,4 +1,4 @@
-# Loadcenter Guide
+# Initial Setup Guide
 
 ## Receiving
 
@@ -23,7 +23,7 @@ All loadcenters must be bonded to ground prior to operation, either:
 - a new ground which complies with the electrical code in your jurisdiction.
 
 !!! danger
-    Improper or missing grounding can result in electrical issues, instability, and serious damage to components.
+    Improper or missing grounding can result in **electrical issues, instability, and serious damage to components**.
     
     Failure to properly ground the loadcenter will void your warranty.
     
@@ -71,9 +71,11 @@ These shrouds should be folded out, and screwed in place with Tek screws prior t
 
 ## Installing Miners
 
-Your loadcenter may come with laser cut inserts, depending on what type of miners you are using:
+Your loadcenter may come with laser cut inserts, depending on what type of miners you are using.
 
-- [x] Bitmain ntminer X19 series
+Miner types which need inserts:
+
+- [x] Bitmain Antminer X19 series
 - [ ] Bitmain Antminer X21 series
 - [x] MicroBT Whatsminer
 - [x] Canaan Avalonminer
@@ -96,13 +98,13 @@ Miner Inserts
 LoadSync™ should be powered via a UPS, which is included inside the loadcenter. There are also cables included with the UPS to connect it to LoadSync™.
 
 !!! tip "Connecting the UPS and LoadSync™"
-    1. Connect the supplied cords to the black "battery" sockets on the back of the UPS.
+    1. Connect the supplied cords to the black `Battery Backup` sockets on the back of the UPS.
     2. Place the UPS either on the floor, or on the provided shelf (if applicable).
     3. Connect the other end of the cables to LoadSync™, one to the bottom of the panel, the other to the exposed cable end.
 
 ## Internet
 
-The easiest way to connect internet to the loadcenters is with Starlink.
+The easiest way to connect internet to a loadcenter is with Starlink.
 
 Internet is routed in via a port on the top of the LoadSync™ panel.
 
@@ -111,6 +113,7 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
     !!! tip "Connecting Internet"
         1. Use the provided adaptor cable to power the Starlink modem from the UPS.
         2. Run the ethernet cable from the Starlink modem to the input port on top of LoadSync™.
+        3. Follow the [Starlink Setup Guide](https://starlink.com/support/article/412a70ca-0d9a-813e-b18f-75c36b84ec06?srsltid=AfmBOorJ5Xbz8_r2wmXyjL0yvitUe96tyCnqscM80Dncu6oDpyfQBAJI).
 
     !!! warning "Changing the Subnet"
         It is recommended that you change which subnet your Starlink modem is configured to.
@@ -118,18 +121,20 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
         The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
         If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
 
+        See the corresponding [Starlink guide](https://starlink.com/support/article/5f5f34ab-2e08-7ce8-75cf-7460597c485c?srsltid=AfmBOorBoLGz3ePovEWVkdK29sqUwtk8VgfQXaH3I_4T8BDdWLI3rXvY).
+
 === "LTE Modem"
 
     !!! tip "Connecting Internet"
-        1. Use the provided adaptor cable to power the LTE modem from the UPS.
-        2. Run the ethernet cable from the LTE modem to the input port on top of LoadSync™.
-        3. Connect the small end of the coax adaptor cable to the `main` port on the modem.
-        4. Connect the large end of the coax adaptor cable to the lightning arrestor, mounted to the wall.
-        5. Connect the large coax cable to the other end of the lightning arrestor.
-        6. Route the large coax cable out of the building using the provided 1" nipple on the wall.
-        7. Attach the other end of the large coax cable to the provided antenna.
-        8. Mount the antenna on the mast, and mount the mast to the building.
-        9. Insert the SIM card into the modem in slot 1.
+        1. Insert the SIM card into the modem in slot 1.
+        2. Use the provided adaptor cable to power the LTE modem from the UPS.
+        3. Run the ethernet cable from the LTE modem to the input port on top of LoadSync™.
+        4. Connect the small end of the coax adaptor cable to the `main` port on the modem.
+        5. Connect the large end of the coax adaptor cable to the lightning arrestor, mounted to the wall.
+        6. Connect the large coax cable to the other end of the lightning arrestor.
+        7. Route the large coax cable out of the building using the provided 1" nipple on the wall.
+        8. Attach the other end of the large coax cable to the provided antenna.
+        9. Mount the antenna on the mast, and mount the mast to the building.
 
         For help with configuring the APN if needed, please [contact us](#contact-us).
         
@@ -143,6 +148,28 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
 ## Startup
 
 === "Hash Huts"
+
+    !!! warning "Prior to startup"
+        
+        Before progressing to the startup procedures:
+            
+        - Ensure all electrical connections have been completed properly.
+        - Ensure the loadcenter has a neutral termination.
+        - Ensure the neutral is bonded to ground upstream of the loadcenter.
+
+        !!! danger
+            
+            Failing to terminate the neutral properly ***will*** damage many components of your loadcenter.
+            Double check with your electrician that the neutral is connected properly and bonded to ground either in the generator or transformer.
+
+    !!! tip "Startup"
+
+        Ensure the main circuit breaker is off prior to startup.
+
+        - Turn on the PDU and auxillary breakers, located inside the main panel at the rear of the building.
+        - Turn on the breakers on the inside of the LC panel(s), located inside the building.
+        - Turn on the breakers on the exterior of the LC panel(s).
+        - Turn on the main breaker on the exterior of the main panel at the rear of the building.
 
 === "Hash Generators"
     
@@ -161,39 +188,49 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
         - Ensure there is 6oz-8oz (8-12in W.C) after the regulator.
         - Purge the the fuel line of any air.
         - Double check for any fuel leaks.
-        - Open 1 1/4" or 2" gas valva at the rear of the engine.
+        - Open 1 1/4" or 2" gas valve at the rear of the engine.
 
     !!! tip "Startup"
         
-        Ensure all electrical crcuit breakers are in the off/open position.
+        Ensure all electrical circuit breakers are in the off/open position.
         This includes breakers in auxilary panels.
 
         === "Dynagen"
             
-            1. Press the "Off" button on the Dynagen controller.
-            2. Allow the engine to warm up to operating temperature.
-            3. Check fuel pressures to ensure stability.
-            4. Once the engine is at operating temperature, it will ramp up to full RPM automatically.
-            5. Check fuel pressures again to ensure stability at full RPM.
-            6. Adjust household regulator if needed.
+            1. Turn on the battery switch.
+            2. Press the `Auto` button on the Dynagen controller.
+            3. Press the `Start` button on the Dynagen controller.
+            4. Allow the engine to warm up to operating temperature.
+            5. Check fuel pressures to ensure stability.
+            6. Once the engine is at operating temperature, it will ramp up to full RPM automatically.
+            7. Check fuel pressures again to ensure stability at full RPM.
+            8. Adjust household regulator if needed.
 
         === "DeepSea"
 
-            1. Press the "Off" button.
+            1. Turn on the battery switch.
+            2. Press the `Manual` button on the DeepSea controller.
+            3. Press the `Start` button on the DeepSea controller.
+            4. Allow the engine to warm up to operating temperature.
+            5. Check fuel pressures to ensure stability.
+            6. Once the engine is at operating temperature, it will ramp up to full RPM automatically, and the `Generator Ready` light will illuminate.
+            7. Check fuel pressures again to ensure stability at full RPM.
+            8. Adjust household regulator if needed.
+            
 
 ## Contact Us
 
 For all sales inquiries, please contact our sales department:
 
-- [sales@upstreamdata.com](mailto://sales@upstreamdata.com)
+- [sales@upstreamdata.com](mailto:sales@upstreamdata.com)
 
 For questions or concerns regarding the loadcenter or its components, please contact our support team:
 
-- [support@upstreamdata.com](mailto://support@upstreamdata.com)
+- [support@upstreamdata.com](mailto:support@upstreamdata.com)
 
 !!! tip
-    New loadcenters come with a "Contact Us" QR code on the nameplate, which will include the serial number in the email.
-    This is the best way to contact us for support inquiries, as it gives us the necessary information to help you.
+    New loadcenters come with a `Contact Us` QR code on the nameplate, which will include the serial number in the email.
+    This is the best way to contact us for support inquiries, as it  gives us the necessary information to help you.
 
 You can also contact us through our website, [upstreamdata.ca](https://upstreamdata.com).
 

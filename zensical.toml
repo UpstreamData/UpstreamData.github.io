@@ -8,7 +8,8 @@ Copyright &copy; 2026 Upstream Data Inc
 """
 use_directory_urls = true
 nav = [
-    { "Loadcenters" = "guides/loadcenters.md" }
+    { "Initial Setup" = "guides/initial_setup.md" },
+    { "Maintenance" = "guides/maintenance.md" }
 ]
 extra_css = ["stylesheets/images.css"]
 markdown_extensions = [
@@ -22,10 +23,14 @@ markdown_extensions = [
     "pymdownx.snippets",
     "abbr",
     {"pymdownx.tasklist" = {custom_checkbox = true}},
+    {"toc" = {permalink = true}},
+    {"pymdownx.emoji" = {emoji_index = "zensical.extensions.emoji.twemoji", emoji_generator = "zensical.extensions.emoji.to_svg"}},
+    "tables"
 ]
 
 [project.theme]
 favicon = "logo/logo.svg"
+logo = "logo/logo.svg"
 language = "en"
 
 features = [
@@ -63,3 +68,12 @@ toggle.name = "Switch to light mode"
 text = "Inter"
 code = "Jetbrains Mono"
 
+[[project.extra.social]]
+icon = "lucide/mail"
+name = "Contact Support"
+link = "mailto:support@upstreamdata.com"
+
+[[project.extra.social]]
+icon = "lucide/globe"
+name = "Website"
+link = "upstreamdata.com"
