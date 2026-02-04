@@ -102,6 +102,8 @@ LoadSync™ should be powered via a UPS, which is included inside the loadcenter
     2. Place the UPS either on the floor, or on the provided shelf (if applicable).
     3. Connect the other end of the cables to LoadSync™, one to the bottom of the panel, the other to the exposed cable end.
 
+For software configuration and remote access, see the [LoadSync Guide](loadsync.md).
+
 ## Internet
 
 The easiest way to connect internet to a loadcenter is with Starlink.
