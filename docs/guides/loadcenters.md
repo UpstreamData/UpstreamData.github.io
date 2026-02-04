@@ -53,14 +53,19 @@ These shrouds should be folded out, and screwed in place with Tek screws prior t
             Split the deflectors up as needed to ensure each shroud has the same amount of deflectors.
 
     5. Insert the heat deflector slider.
+ 
+        ![Deflector assembly](images/deflectors.png){ .fix-png }
+        /// caption
+        Deflector Assembly Steps
+        ///
 
-    The images below illustrate this process.
+    6. Attach the shrouds to the building, with the top shroud deflectors facing up, and the bottom deflectors facing down.
 
-    
-    ![Deflector assembly](images/deflectors.png){ .fix-png }
-    /// caption
-    Deflector Assembly Steps
-    ///
+        ![Deflector attachment](images/attaching-deflectors.png){ .fix-png width="20%" }
+        /// caption
+        Deflector Attachment Direction
+        ///
+
 
 ## Installing Miners
 
@@ -116,6 +121,16 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
     !!! tip "Connecting Internet"
         1. Use the provided adaptor cable to power the LTE modem from the UPS.
         2. Run the ethernet cable from the LTE modem to the input port on top of LoadSync™.
+        3. Connect the small end of the coax adaptor cable to the `main` port on the modem.
+        4. Connect the large end of the coax adaptor cable to the lightning arrestor, mounted to the wall.
+        5. Connect the large coax cable to the other end of the lightning arrestor.
+        6. Route the large coax cable out of the building using the provided 1" nipple on the wall.
+        7. Attach the other end of the large coax cable to the provided antenna.
+        8. Mount the antenna on the mast, and mount the mast to the building.
+        9. Insert the SIM card into the modem in slot 1.
+
+        For help with configuring the APN if needed, please [contact us](#contact-us).
+        
 
 === "Other"
     
@@ -124,3 +139,19 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
         2. Run the ethernet cable from the router to the input port on top of LoadSync™.
 
 *[UPS]: Uninterruptible Power Supply
+
+## Contact Us
+
+For all sales inquiries, please contact our sales department:
+
+- [sales@upstreamdata.com](mailto://sales@upstreamdata.com)
+
+For questions or concerns regarding the loadcenter or its components, please contact our support team:
+
+- [support@upstreamdata.com](mailto://support@upstreamdata.com)
+
+!!! tip
+    New loadcenters come with a "Contact Us" QR code on the nameplate, which will include the serial number in the email.
+    This is the best way to contact us for support inquiries, as it gives us the necessary information to help you.
+
+You can also contact us through our website, [upstreamdata.ca](https://upstreamdata.com).
