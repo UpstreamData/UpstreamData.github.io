@@ -2,11 +2,13 @@
 
 ## Receiving
 
-- Remove shipping protection from the outside of the building
-- Ensure there is nothing obstructing the exhaust dampers
-- Ensure the intakes can be opened
-- Ensure the filters are free of debris
-- Check for any damage to the exterior of the building
+!!! tip "Receiving the building"
+
+    - Remove shipping protection from the outside of the building
+    - Ensure there is nothing obstructing the exhaust dampers
+    - Ensure the intakes can be opened
+    - Ensure the filters are free of debris
+    - Check for any damage to the exterior of the building
 
 For optimal performance, Upstream Data recommends orienting the building parallel to prevailing wind directions.
 For even more performance, we also suggest placing the unit on piles, or raised framework.
@@ -138,7 +140,46 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
         1. If needed, use the provided adaptor cable to power your router from the UPS.
         2. Run the ethernet cable from the router to the input port on top of LoadSync™.
 
-*[UPS]: Uninterruptible Power Supply
+## Startup
+
+=== "Hash Huts"
+
+=== "Hash Generators"
+    
+    !!! warning "Prior to startup"
+
+        Before progressing to the startup procedures:
+
+        - Check for any loose or damaged components that may have occurred during shipping.
+        - Uncap and assemble the exhaust.
+        - Ensure that the correct size gas line is being used and has been inspected and approved for use.
+        - Connect the gas line to the gas intake on the outside of the building.
+        - Check that input pressure is correct (5PSI minimum to 25PSI maximum).
+        - Ensure all manifolds are corectly set.
+        - Check coolant levels and add 50/50 premix as required.
+        - Check engine oil levels and add 15W-40 low ash oil if needed.
+        - Ensure there is 6oz-8oz (8-12in W.C) after the regulator.
+        - Purge the the fuel line of any air.
+        - Double check for any fuel leaks.
+        - Open 1 1/4" or 2" gas valva at the rear of the engine.
+
+    !!! tip "Startup"
+        
+        Ensure all electrical crcuit breakers are in the off/open position.
+        This includes breakers in auxilary panels.
+
+        === "Dynagen"
+            
+            1. Press the "Off" button on the Dynagen controller.
+            2. Allow the engine to warm up to operating temperature.
+            3. Check fuel pressures to ensure stability.
+            4. Once the engine is at operating temperature, it will ramp up to full RPM automatically.
+            5. Check fuel pressures again to ensure stability at full RPM.
+            6. Adjust household regulator if needed.
+
+        === "DeepSea"
+
+            1. Press the "Off" button.
 
 ## Contact Us
 
@@ -155,3 +196,5 @@ For questions or concerns regarding the loadcenter or its components, please con
     This is the best way to contact us for support inquiries, as it gives us the necessary information to help you.
 
 You can also contact us through our website, [upstreamdata.ca](https://upstreamdata.com).
+
+*[UPS]: Uninterruptible Power Supply
