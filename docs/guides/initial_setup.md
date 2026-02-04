@@ -110,17 +110,6 @@ The easiest way to connect internet to a loadcenter is with Starlink.
 
 Internet is routed in via a port on the top of the LoadSync™ panel.
 
-!!! warning "Changing the Subnet"
-    LoadSync™ must be on the same subnet as the miners to automatically discover them.
-
-    It is recommended that you change which subnet your router is configured to.
-    The default `192.168.1.1/24` is very common in residential routers, and can cause overlaps.
-    If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™
-    (such as the Tailscale integration) may not work properly.
-
-    **Recommended:** Use a unique subnet (e.g., `10.0.0.0/24`) that differs from your
-    home/business network while ensuring LoadSync™ and all miners share the same subnet.
-
 === "Starlink"
 
     !!! tip "Connecting Internet"
@@ -135,6 +124,12 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
         If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
 
         See the corresponding [Starlink guide](https://starlink.com/support/article/5f5f34ab-2e08-7ce8-75cf-7460597c485c?srsltid=AfmBOorBoLGz3ePovEWVkdK29sqUwtk8VgfQXaH3I_4T8BDdWLI3rXvY).
+
+    !!! warning "Changing the Subnet"
+        It is recommended that you change which subnet your Starlink modem is configured to.
+    
+        The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
+        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
 
 === "LTE Modem"
 
