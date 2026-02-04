@@ -16,7 +16,7 @@ markdown_extensions = [
     "admonition",
     "pymdownx.details",
     "pymdownx.superfences",
-    {"pymdownx.tabbed" = {alternate_style = true}},
+    {"pymdownx.tabbed" = {alternate_style = true, slugify = {case = "lower"}}},
     "md_in_html",
     "pymdownx.blocks.caption",
     "pymdownx.snippets",
@@ -43,7 +43,8 @@ features = [
     "search.highlight",
     "toc.follow",
     "toc.integrate",
-    "content.tooltips"
+    "content.tooltips",
+    "content.tabs.link"
 ]
 
 [[project.theme.palette]]
