@@ -25,7 +25,10 @@ markdown_extensions = [
     {"pymdownx.tasklist" = {custom_checkbox = true}},
     {"toc" = {permalink = true}},
     {"pymdownx.emoji" = {emoji_index = "zensical.extensions.emoji.twemoji", emoji_generator = "zensical.extensions.emoji.to_svg"}},
-    "tables"
+    "tables",
+    "pymdownx.caret",
+    "pymdownx.tilde",
+    "pymdownx.mark",
 ]
 
 [project.theme]
@@ -49,7 +52,7 @@ features = [
     "toc.follow",
     "toc.integrate",
     "content.tooltips",
-    "content.tabs.link"
+    "content.tabs.link",
 ]
 
 [[project.theme.palette]]
