@@ -48,6 +48,11 @@ The home page provides a quick overview of your loadcenter's status, organized i
     - Fan speed
     - Building temperature
     - Louver state
+    
+    ![Home page - Climate tab](images/loadsync-home-climate.png){ .fix-png }
+    /// caption
+    Climate tab
+    ///
 
 -   :lucide-zap:{ .lg .middle } __Power__
 
@@ -56,6 +61,11 @@ The home page provides a quick overview of your loadcenter's status, organized i
     - 3-phase amperage
     - Voltage
     - Kilowatt readings
+
+    ![Home page - Power tab](images/loadsync-home-power.png){ .fix-png }
+    /// caption
+    Power tab
+    ///
 
 -   :lucide-cog:{ .lg .middle } __Engine__ *Hash Generator only*
 
@@ -67,14 +77,13 @@ The home page provides a quick overview of your loadcenter's status, organized i
     - Gas Pressure
     - Battery Voltage
     
+    ![Home page - Engine tab](images/loadsync-home-engine.png){ .fix-png }
+    /// caption
+    Engine tab
+    ///
+    
 
 </div>
-
-<!-- TODO: Add screenshot of the home page climate tab -->
-<!-- ![Home page - Climate tab](images/loadsync-home-climate.png){ .fix-png } -->
-
-<!-- TODO: Add screenshot of the home page power tab -->
-<!-- ![Home page - Power tab](images/loadsync-home-power.png){ .fix-png } -->
 
 ## Miners
 
@@ -86,8 +95,10 @@ The miners page displays a fleet overview of all discovered miners in a table wi
 - Wattage
 - Efficiency
 
-<!-- TODO: Add screenshot of the miners fleet table -->
-<!-- ![Miners fleet view](images/loadsync-miners.png){ .fix-png } -->
+![Miners fleet view](images/loadsync-miners.png){ .fix-png width="50%" }
+/// caption
+Miners page
+///
 
 ### Scanning for Miners
 
@@ -139,9 +150,11 @@ To discover miners on the network, click the **Re-Scan Miners** button at the to
 
     </div>
 
-    <!-- TODO: Add screenshot of the individual miner basic tab -->
-    <!-- ![Miner detail - Basic tab](images/loadsync-miner-basic.png){ .fix-png } -->
-
+    ![Miner detail - Basic tab](images/loadsync-miner-basic.png){ .fix-png width="50%" }
+    /// caption
+    Miner basic tab
+    ///
+    
 === "Settings"
 
     Provides controls for the miner:
@@ -174,15 +187,14 @@ To discover miners on the network, click the **Re-Scan Miners** button at the to
 
     </div>
 
-    <!-- TODO: Add screenshot of the individual miner settings tab -->
-    <!-- ![Miner detail - Settings tab](images/loadsync-miner-settings.png){ .fix-png } -->
-
+    ![Miner detail - Settings tab](images/loadsync-miner-settings.png){ .fix-png width="50%" }
+    /// caption
+    Miner settings tab
+    ///
+    
 === "Advanced"
 
     Shows additional diagnostic data for the miner.
-
-    <!-- TODO: Add screenshot of the individual miner advanced tab -->
-    <!-- ![Miner detail - Advanced tab](images/loadsync-miner-advanced.png){ .fix-png } -->
 
 ## Climate
 
@@ -226,9 +238,11 @@ The climate page monitors and controls the loadcenter's ventilation system. It i
 
     </div>
 
-    <!-- TODO: Add screenshot of the climate basic tab -->
-    <!-- ![Climate - Basic tab](images/loadsync-climate-basic.png){ .fix-png } -->
-
+    ![Climate - Basic tab](images/loadsync-climate-basic.png){ .fix-png width="50%" }
+    /// caption
+    Climate basic tab
+    ///
+    
 === "Settings"
 
     Provides controls for the fan system:
@@ -264,9 +278,11 @@ The climate page monitors and controls the loadcenter's ventilation system. It i
     !!! tip "Auto Mode Behavior"
         When auto mode is enabled, the fans will automatically adjust speed to maintain the target temperature. When disabled, fans run at the minimum speed setting.
 
-    <!-- TODO: Add screenshot of the climate settings tab -->
-    <!-- ![Climate - Settings tab](images/loadsync-climate-settings.png){ .fix-png } -->
-
+    ![Climate - Settings tab](images/loadsync-climate-settings.png){ .fix-png width="50%" }
+    /// caption
+    Climate settings tab
+    ///
+    
 ## Power
 
 The power page monitors the loadcenter's power distribution units (PDUs) and electrical output.
@@ -297,9 +313,11 @@ The power page monitors the loadcenter's power distribution units (PDUs) and ele
 
     </div>
 
-    <!-- TODO: Add screenshot of the power basic tab -->
-    <!-- ![Power - Basic tab](images/loadsync-power-basic.png){ .fix-png } -->
-
+    ![Power - Basic tab](images/loadsync-power-basic.png){ .fix-png width="50%" }
+    /// caption
+    Power basic tab
+    ///
+    
 === "PDUs"
 
     Lists all connected PDUs with their status.
@@ -307,12 +325,16 @@ The power page monitors the loadcenter's power distribution units (PDUs) and ele
     !!! tip "PDU Details"
         Clicking on an individual PDU shows detailed port-level information including per-phase amperage, voltage, and kilowatt readings.
 
-    <!-- TODO: Add screenshot of the PDU list -->
-    <!-- ![Power - PDU list](images/loadsync-power-pdus.png){ .fix-png } -->
-
-    <!-- TODO: Add screenshot of an individual PDU detail page -->
-    <!-- ![Individual PDU detail](images/loadsync-pdu-detail.png){ .fix-png } -->
-
+    ![Power - PDU list](images/loadsync-power-pdus.png){ .fix-png width="50%" }
+    /// caption
+    PDU list
+    ///
+    
+    ![Individual PDU detail](images/loadsync-pdu-detail.png){ .fix-png width="50%" }
+    /// caption
+    PDU details
+    ///
+    
 ## Engine
 
 !!! info
@@ -364,9 +386,11 @@ The engine page monitors and controls the loadcenter's generator. It is organize
 
     </div>
 
-    <!-- TODO: Add screenshot of the engine basic tab -->
-    <!-- ![Engine - Basic tab](images/loadsync-engine-basic.png){ .fix-png } -->
-
+    ![Engine - Basic tab](images/loadsync-engine-basic.png){ .fix-png width="50%" }
+    /// caption
+    Engine basic tab
+    ///
+    
 === "Settings"
 
     Provides engine controls:
@@ -399,9 +423,11 @@ The engine page monitors and controls the loadcenter's generator. It is organize
 
     </div>
 
-    <!-- TODO: Add screenshot of the engine settings tab -->
-    <!-- ![Engine - Settings tab](images/loadsync-engine-settings.png){ .fix-png } -->
-
+    ![Engine - Settings tab](images/loadsync-engine-settings.png){ .fix-png width="50%" }
+    /// caption
+    Engine settings tab
+    ///
+    
     !!! danger "Emergency Shutdown"
         The ESD button will immediately shut down the engine. You will be prompted to confirm before the shutdown is executed.
 
@@ -409,16 +435,19 @@ The engine page monitors and controls the loadcenter's generator. It is organize
 
 The graphs page displays historical data charts for your loadcenter's systems. The available graph categories depend on your hardware configuration and may include **Engine**, **Power**, and **Climate**.
 
-Each chart supports multiple timeframe selections:
+!!! tip "Chart timeframes"
+    Each chart supports multiple timeframe selections:
 
-- 1 hour
-- 6 hours
-- 1 day
-- 1 week
-- 1 month
+    - 1 hour
+    - 6 hours
+    - 1 day
+    - 1 week
+    - 1 month
 
-<!-- TODO: Add screenshot of the graphs page showing a chart -->
-<!-- ![Graphs page](images/loadsync-graphs.png){ .fix-png } -->
+![Graphs page](images/loadsync-graphs.png){ .fix-png width="50%" }
+/// caption
+Graphs page
+///
 
 ### Engine Graphs
 
@@ -440,22 +469,18 @@ The alarms page tracks system alerts and is organized into tabs:
 
     Shows all currently active alarms with descriptions and icons.
 
-    <!-- TODO: Add screenshot of the alarms basic tab -->
-    <!-- ![Alarms - Basic tab](images/loadsync-alarms-basic.png){ .fix-png } -->
-
 === "History"
 
     Shows a log of past alarms with timestamps, allowing you to review when issues occurred.
 
-    <!-- TODO: Add screenshot of the alarms history tab -->
-    <!-- ![Alarms - History tab](images/loadsync-alarms-history.png){ .fix-png } -->
-
+    ![Alarms - History tab](images/loadsync-alarms-history.png){ .fix-png width="50%" }
+    /// caption
+    Alarm history tab
+    ///
+    
 === "Callouts"
 
     Configures external alarm notifications via [ntfy.sh](https://ntfy.sh). When enabled, alarm events will be pushed as notifications to your device.
-
-    <!-- TODO: Add screenshot of the alarms callouts tab -->
-    <!-- ![Alarms - Callouts tab](images/loadsync-alarms-callouts.png){ .fix-png } -->
 
 Alarm types include:
 
@@ -473,9 +498,11 @@ Market Sync allows LoadSync™ to automatically respond to real-time electricity
 
     Displays the current market price and sync status.
 
-    <!-- TODO: Add screenshot of the market sync basic tab -->
-    <!-- ![Market Sync - Basic tab](images/loadsync-sync-basic.png){ .fix-png } -->
-
+    ![Market Sync - Basic tab](images/loadsync-sync-basic.png){ .fix-png width="50%" }
+    /// caption
+    Market sync basic tab
+    ///
+    
 === "Settings"
 
     Provides configuration options:
@@ -521,9 +548,11 @@ Market Sync allows LoadSync™ to automatically respond to real-time electricity
     | HB_WEST       | LZ_SOUTH          |
     |               | LZ_WEST           |
 
-    <!-- TODO: Add screenshot of the market sync settings tab -->
-    <!-- ![Market Sync - Settings tab](images/loadsync-sync-settings.png){ .fix-png } -->
-
+    ![Market Sync - Settings tab](images/loadsync-sync-settings.png){ .fix-png width="50%" }
+    /// caption
+    Market sync settings tab
+    ///
+    
 ## Help
 
 The help page provides network information and setup tools, organized into tabs:
@@ -532,25 +561,12 @@ The help page provides network information and setup tools, organized into tabs:
 
     Displays the loadcenter's current network configuration including IP address and connection details.
 
-    <!-- TODO: Add screenshot of the help network tab -->
-    <!-- ![Help - Network tab](images/loadsync-help-network.png){ .fix-png } -->
-
 === "Tailscale"
 
     Provides Tailscale VPN setup with a scannable QR code for quick authentication.
 
     !!! tip "Full Setup Guide"
         See [Tailscale Remote Access](#tailscale-remote-access) below for a detailed walkthrough.
-
-    <!-- TODO: Add screenshot of the help tailscale tab -->
-    <!-- ![Help - Tailscale tab](images/loadsync-help-tailscale.png){ .fix-png } -->
-
-=== "Fleet Manager"
-
-    Shows the Fleet Manager connection status and provides a QR code for linking your loadcenter to the central fleet management system.
-
-    <!-- TODO: Add screenshot of the help fleet manager tab -->
-    <!-- ![Help - Fleet Manager tab](images/loadsync-help-fleet.png){ .fix-png } -->
 
 ## Tailscale Remote Access
 
