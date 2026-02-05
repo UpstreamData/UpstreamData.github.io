@@ -102,6 +102,8 @@ LoadSync™ should be powered via a UPS, which is included inside the loadcenter
     2. Place the UPS either on the floor, or on the provided shelf (if applicable).
     3. Connect the other end of the cables to LoadSync™, one to the bottom of the panel, the other to the exposed cable end.
 
+For software configuration and remote access, see the [LoadSync Guide](loadsync.md).
+
 ## Internet
 
 The easiest way to connect internet to a loadcenter is with Starlink.
@@ -123,6 +125,12 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
 
         See the corresponding [Starlink guide](https://starlink.com/support/article/5f5f34ab-2e08-7ce8-75cf-7460597c485c?srsltid=AfmBOorBoLGz3ePovEWVkdK29sqUwtk8VgfQXaH3I_4T8BDdWLI3rXvY).
 
+    !!! warning "Changing the Subnet"
+        It is recommended that you change which subnet your Starlink modem is configured to.
+    
+        The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
+        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
+
 === "LTE Modem"
 
     !!! tip "Connecting Internet"
@@ -140,7 +148,7 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
         
 
 === "Other"
-    
+
     !!! tip "Connecting Internet"
         1. If needed, use the provided adaptor cable to power your router from the UPS.
         2. Run the ethernet cable from the router to the input port on top of LoadSync™.
