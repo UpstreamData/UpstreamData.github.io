@@ -153,8 +153,6 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
         1. If needed, use the provided adaptor cable to power your router from the UPS.
         2. Run the ethernet cable from the router to the input port on top of LoadSync™.
 
-*[UPS]: Uninterruptible Power Supply
-
 ## Startup
 
 === "Hash Huts"
