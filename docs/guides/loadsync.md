@@ -1,6 +1,8 @@
 # LoadSync™ Guide
 
-LoadSync™ is the building management software for your loadcenter. For hardware setup and UPS connections, see the [Loadcenter Guide](loadcenters.md#loadsync-setup).
+LoadSync™ is the building management software for your loadcenter. For hardware setup and UPS connections, see the [Loadcenter Guide](initial-setup.md#loadsynctm-setup).
+
+LoadSync™ can be accessed remotely with the remote access web UI.  Please [contact us](contact.md) for the login.
 
 ## Tailscale Remote Access
 
@@ -23,7 +25,8 @@ Tailscale allows for secure, remote access to any miners on a LoadSync™ access
 
 After connecting, the **Tailscale State** should display as "Running" and your account email will appear in the **Profile** dropdown.
 
-You can now access miner web interfaces remotely by entering their IPs in your browser. Miner IPs can be found on the **Miners** page in LoadSync.
+You may need to enable the routes on the Tailscale web admin panel.
+To enable them, click the `...` dropdown next to a unit, select `Edit route settings...`, and ensure the route is enabled under `Subnet routes`.
 
 !!! info "More Information"
     For a detailed walkthrough, see the [Tailscale Quickstart Guide](https://tailscale.com/docs/how-to/quickstart).
