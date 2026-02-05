@@ -125,12 +125,6 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
 
         See the corresponding [Starlink guide](https://starlink.com/support/article/5f5f34ab-2e08-7ce8-75cf-7460597c485c?srsltid=AfmBOorBoLGz3ePovEWVkdK29sqUwtk8VgfQXaH3I_4T8BDdWLI3rXvY).
 
-    !!! warning "Changing the Subnet"
-        It is recommended that you change which subnet your Starlink modem is configured to.
-    
-        The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
-        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
-
 === "LTE Modem"
 
     !!! tip "Connecting Internet"
@@ -146,12 +140,23 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
 
         For help with configuring the APN if needed, please [contact us](#contact-us).
         
+    !!! warning "Changing the Subnet"
+        It is recommended that you change which subnet your Starlink modem is configured to.
+    
+        The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
+        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
 
 === "Other"
 
     !!! tip "Connecting Internet"
         1. If needed, use the provided adaptor cable to power your router from the UPS.
         2. Run the ethernet cable from the router to the input port on top of LoadSync™.
+
+    !!! warning "Changing the Subnet"
+        It is recommended that you change which subnet your Starlink modem is configured to.
+    
+        The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
+        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
 
 ## Startup
 
