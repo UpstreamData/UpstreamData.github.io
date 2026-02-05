@@ -1,10 +1,10 @@
-# LoadSync Guide
+# LoadSync™ Guide
 
 LoadSync™ is the building management software for your loadcenter. For hardware setup and UPS connections, see the [Loadcenter Guide](loadcenters.md#loadsync-setup).
 
 ## Tailscale Remote Access
 
-Tailscale allows for secure, remote access of the LoadSync interface from anywhere.
+Tailscale allows for secure, remote access to any miners on a LoadSync™ accessible subnet.
 
 ### Prerequisites
 
