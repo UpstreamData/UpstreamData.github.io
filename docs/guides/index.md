@@ -1,3 +1,6 @@
-# Guides
+---
+template: redirect.html
+location: /guides/initial-setup/
+---
 
-[Loadcenter Initial Setup](./initial_setup.md){ .md-button .md-button--primary }
+# Guides
