@@ -109,17 +109,17 @@ Miner Inserts
 
     [Contact us](contact.md) for replacement filters.
 
-## LoadSync™ setup
+## LoadSync(tm) setup
 
-LoadSync™ should be powered via a UPS, which is included inside the loadcenter. There are also cables included with the UPS to connect it to LoadSync™.
+LoadSync(tm) should be powered via a UPS, which is included inside the loadcenter. There are also cables included with the UPS to connect it to LoadSync(tm).
 
-!!! tip "Connecting the UPS and LoadSync™"
+!!! tip "Connecting the UPS and LoadSync(tm)"
     1. Connect the supplied cords to the black `Battery Backup` sockets on the back of the UPS.
     2. Place the UPS either on the floor, or on the provided shelf (if applicable).
-    3. Connect the other end of the cables to LoadSync™, one to the bottom of the panel, the other to the exposed cable end.
+    3. Connect the other end of the cables to LoadSync(tm), one to the bottom of the panel, the other to the exposed cable end.
 
-!!! warning "Rebooting LoadSync™"
-    Shutting off power to the unit **will not** properly reboot LoadSync™, as it runs off the UPS (Backup Battery). To correctly reboot LoadSync™, shut off the UPS or unplug all systems from the UPS for at least 10 seconds.
+!!! warning "Rebooting LoadSync(tm)"
+    Shutting off power to the unit **will not** properly reboot LoadSync(tm), as it runs off the UPS (Backup Battery). To correctly reboot LoadSync(tm), shut off the UPS or unplug all systems from the UPS for at least 10 seconds.
 
 For software configuration and remote access, see the [LoadSync Guide](loadsync.md).
 
@@ -127,20 +127,20 @@ For software configuration and remote access, see the [LoadSync Guide](loadsync.
 
 The easiest way to connect internet to a loadcenter is with Starlink.
 
-Internet is routed in via a port on the top of the LoadSync™ panel.
+Internet is routed in via a port on the top of the LoadSync(tm) panel.
 
 === "Starlink"
 
     !!! tip "Connecting Internet"
         1. Use the provided adaptor cable to power the Starlink modem from the UPS.
-        2. Run the ethernet cable from the Starlink modem to the input port on top of LoadSync™.
+        2. Run the ethernet cable from the Starlink modem to the input port on top of LoadSync(tm).
         3. Follow the [Starlink Setup Guide](https://starlink.com/support/article/412a70ca-0d9a-813e-b18f-75c36b84ec06?srsltid=AfmBOorJ5Xbz8_r2wmXyjL0yvitUe96tyCnqscM80Dncu6oDpyfQBAJI).
 
     !!! warning "Changing the Subnet"
         It is recommended that you change which subnet your Starlink modem is configured to.
     
         The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
-        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
+        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync(tm) (such as the Tailscale integration) may not work properly.
 
         See the corresponding [Starlink guide](https://starlink.com/support/article/5f5f34ab-2e08-7ce8-75cf-7460597c485c?srsltid=AfmBOorBoLGz3ePovEWVkdK29sqUwtk8VgfQXaH3I_4T8BDdWLI3rXvY).
 
@@ -149,7 +149,7 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
     !!! tip "Connecting Internet"
         1. Insert the SIM card into the modem in slot 1.
         2. Use the provided adaptor cable to power the LTE modem from the UPS.
-        3. Run the ethernet cable from the LTE modem to the input port on top of LoadSync™.
+        3. Run the ethernet cable from the LTE modem to the input port on top of LoadSync(tm).
         4. Connect the small end of the coax adaptor cable to the `main` port on the modem.
         5. Connect the large end of the coax adaptor cable to the lightning arrestor, mounted to the wall.
         6. Connect the large coax cable to the other end of the lightning arrestor.
@@ -166,19 +166,19 @@ Internet is routed in via a port on the top of the LoadSync™ panel.
         It is recommended that you change which subnet your LTE modem is configured to.
 
         The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
-        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
+        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync(tm) (such as the Tailscale integration) may not work properly.
 
 === "Other"
 
     !!! tip "Connecting Internet"
         1. If needed, use the provided adaptor cable to power your router from the UPS.
-        2. Run the ethernet cable from the router to the input port on top of LoadSync™.
+        2. Run the ethernet cable from the router to the input port on top of LoadSync(tm).
 
     !!! warning "Changing the Subnet"
         It is recommended that you change which subnet your router is configured to.
 
         The default is `192.168.1.1/24`, which is very common in residential routers, and can cause overlaps.
-        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync™ (such as the Tailscale integration) may not work properly.
+        If the subnet in the loadcenter overlaps with your local subnet, some features of LoadSync(tm) (such as the Tailscale integration) may not work properly.
 
 ## Startup
 

@@ -1,17 +1,17 @@
-# LoadSync™ Guide
+# LoadSync(tm) Guide
 
-LoadSync™ is the building management software for your loadcenter. For hardware setup and UPS connections, see the [Loadcenter Guide](initial-setup.md#loadsynctm-setup).
+LoadSync(tm) is the building management software for your loadcenter. For hardware setup and UPS connections, see the [Loadcenter Guide](initial-setup.md#loadsynctm-setup).
 
-LoadSync™ can be accessed remotely with the remote access web UI.  Please [contact us](contact.md) for the login.
+LoadSync(tm) can be accessed remotely with the remote access web UI.  Please [contact us](contact.md) for the login.
 
 ## Navigation
 
-The LoadSync™ interface uses a sidebar on the right side of the screen for navigating between pages.
+The LoadSync(tm) interface uses a sidebar on the right side of the screen for navigating between pages.
 The available pages depend on your loadcenter's hardware configuration.
 
 !!! tip "Variable pages"
 
-    LoadSync™ automatically selects which pages to display based on what type of unit you have.
+    LoadSync(tm) automatically selects which pages to display based on what type of unit you have.
     
     By default, the following pages will display:
 
@@ -21,7 +21,7 @@ The available pages depend on your loadcenter's hardware configuration.
     - [x] Alarms
     - [x] Help
 
-    Depending on what devices are communicating with LoadSync™, the follow pages may also appear:
+    Depending on what devices are communicating with LoadSync(tm), the follow pages may also appear:
 
     - [ ] Climate
     - [ ] Power
@@ -30,7 +30,7 @@ The available pages depend on your loadcenter's hardware configuration.
 
     !!! question "Missing pages/devices"
         
-        If LoadSync™  is having trouble communicating with a device, it may be missing some pages.
+        If LoadSync(tm)  is having trouble communicating with a device, it may be missing some pages.
         Sometimes this can be rectified by running rediscovery, located on the `Help` page under `Advanced`.
     
 
@@ -102,10 +102,10 @@ Miners page
 
 ### Scanning for Miners
 
-To discover miners on the network, click the **Re-Scan Miners** button at the top of the page. LoadSync™ will scan the local network and populate the table with any miners it finds.
+To discover miners on the network, click the **Re-Scan Miners** button at the top of the page. LoadSync(tm) will scan the local network and populate the table with any miners it finds.
 
 !!! note
-    LoadSync™ automatically searches for miners on startup, so this may not even be required unless there are miners missing from the list.
+    LoadSync(tm) automatically searches for miners on startup, so this may not even be required unless there are miners missing from the list.
 
 ### Individual Miner Controls
 
@@ -492,7 +492,7 @@ Alarm types include:
 !!! info
     Market Sync is only available on loadcenters connected to the ERCOT power grid.
 
-Market Sync allows LoadSync™ to automatically respond to real-time electricity pricing from ERCOT (Electric Reliability Council of Texas). When the price exceeds your configured limit, LoadSync™ will automatically pause mining operations and resume them when prices drop back down.
+Market Sync allows LoadSync(tm) to automatically respond to real-time electricity pricing from ERCOT (Electric Reliability Council of Texas). When the price exceeds your configured limit, LoadSync(tm) will automatically pause mining operations and resume them when prices drop back down.
 
 === "Basic"
 
@@ -570,7 +570,7 @@ The help page provides network information and setup tools, organized into tabs:
 
 ## Tailscale Remote Access
 
-Tailscale allows for secure, remote access to any miners on a LoadSync™ accessible subnet.
+Tailscale allows for secure, remote access to any miners on a LoadSync(tm) accessible subnet.
 
 ### Prerequisites
 
